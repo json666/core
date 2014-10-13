@@ -1,4 +1,4 @@
-package com.bo.openlogic.core.bean;
+package com.bo.openlogics.core.bean;
 
 import java.io.Serializable;
 

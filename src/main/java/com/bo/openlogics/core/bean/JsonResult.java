@@ -1,4 +1,4 @@
-package com.bo.openlogic.core.bean;
+package com.bo.openlogics.core.bean;
 
 /**
  * Created by json on 7/09/14.
