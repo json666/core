@@ -9,7 +9,8 @@ public class ArticulosReportes implements Serializable {
     private Long id;
     private Double precio ;
     private byte[] upc ;
-    private String descripcionArticulo ;
+    private String descripcionArticulo;
+    private String codigoArticulo;
 
     public ArticulosReportes() {
     }
@@ -25,6 +26,14 @@ public class ArticulosReportes implements Serializable {
         this.precio = precio;
         this.upc = upc;
         this.descripcionArticulo = descripcionArticulo;
+    }
+
+    public ArticulosReportes(Long id, Double precio, byte[] upc, String descripcionArticulo, String codigoArticulo) {
+        this.id = id;
+        this.precio = precio;
+        this.upc = upc;
+        this.descripcionArticulo = descripcionArticulo;
+        this.codigoArticulo = codigoArticulo;
     }
 
     public Long getId() {
@@ -57,5 +66,13 @@ public class ArticulosReportes implements Serializable {
 
     public void setDescripcionArticulo(String descripcionArticulo) {
         this.descripcionArticulo = descripcionArticulo;
+    }
+
+    public String getCodigoArticulo() {
+        return codigoArticulo;
+    }
+
+    public void setCodigoArticulo(String codigoArticulo) {
+        this.codigoArticulo = codigoArticulo;
     }
 }
