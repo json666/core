@@ -7,7 +7,7 @@ import java.io.Serializable;
  */
 public class ArticulosReportes implements Serializable {
     private Long id;
-    private Double precio ;
+    private Double precioCosto ;
     private byte[] upc ;
     private String descripcionArticulo;
     private String codigoArticulo;
@@ -15,22 +15,22 @@ public class ArticulosReportes implements Serializable {
     public ArticulosReportes() {
     }
 
-    public ArticulosReportes(Long id, Double precio, byte[] upc) {
+    public ArticulosReportes(Long id, Double precioCosto, byte[] upc) {
         this.id = id;
-        this.precio = precio;
+        this.precioCosto = precioCosto;
         this.upc = upc;
     }
 
-    public ArticulosReportes(Long id, Double precio, byte[] upc, String descripcionArticulo) {
+    public ArticulosReportes(Long id, Double precioCosto, byte[] upc, String descripcionArticulo) {
         this.id = id;
-        this.precio = precio;
+        this.precioCosto = precioCosto;
         this.upc = upc;
         this.descripcionArticulo = descripcionArticulo;
     }
 
-    public ArticulosReportes(Long id, Double precio, byte[] upc, String descripcionArticulo, String codigoArticulo) {
+    public ArticulosReportes(Long id, Double precioCosto, byte[] upc, String descripcionArticulo, String codigoArticulo) {
         this.id = id;
-        this.precio = precio;
+        this.precioCosto = precioCosto;
         this.upc = upc;
         this.descripcionArticulo = descripcionArticulo;
         this.codigoArticulo = codigoArticulo;
@@ -44,12 +44,12 @@ public class ArticulosReportes implements Serializable {
         this.id = id;
     }
 
-    public Double getPrecio() {
-        return precio;
+    public Double getPrecioCosto() {
+        return precioCosto;
     }
 
-    public void setPrecio(Double precio) {
-        this.precio = precio;
+    public void setPrecioCosto(Double precioCosto) {
+        this.precioCosto = precioCosto;
     }
 
     public byte[] getUpc() {
